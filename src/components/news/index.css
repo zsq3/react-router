@@ -1,0 +1,7 @@
+.el-carousel__item{
+    background: #99a9bf;
+}
+.el-carousel__item>h3{
+    padding-top: 150px;
+    font-size: 30px;
+}
