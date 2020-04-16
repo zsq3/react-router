@@ -5,3 +5,12 @@
     padding-top: 150px;
     font-size: 30px;
 }
+
+ol.news-title{
+    height: 400px;
+}
+ol.news-title>li{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}

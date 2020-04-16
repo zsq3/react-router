@@ -5,6 +5,12 @@ import './index.css'
 
 class Manage extends Component {
     constructor(props){
+        // super继承父类属性，同时生成子类this, props可加可不加，
+        // 但是你如果要在constructor内使用props 比如this.state = { name: this.props.name},
+        // 这时候必须写成super(props), 不加的时候constructor内的this.props 为undefined的
+        // 但是有时候你忘了加只写super() 甚至constructor函数都没写， 你还是可以在render内调用this.props
+        // 这是因为react会在实例上默认生成instance.props,  所以看需求可加可不加
+
         super(props);
         this.state = {
             columns: [
