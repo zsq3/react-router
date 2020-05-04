@@ -15,7 +15,7 @@ function App() {
     <div className="App">
         <BrowserRouter>
             <div>
-                <Menu theme="dark" defaultActive="1" className="el-menu-demo" mode="horizontal">
+                <Menu theme="dark" className="el-menu-demo" mode="horizontal">
                     <Menu.Item index="1">
                         <NavLink exact to='/'>个人中心</NavLink>
                     </Menu.Item>

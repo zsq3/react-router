@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Route } from "react-router-dom";
 
-import { Carousel, Menu, Layout } from 'element-react';
+import { Carousel, Layout } from 'element-react';
 import './index.css'
 
 import Detail from "./details";
