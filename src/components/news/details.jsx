@@ -8,13 +8,19 @@ class Detail extends Component {
             content: ''
         }
     }
+    getNews(){
+        this.$http.get('http://api', { id: this.props.match.params.id })
+            .then(res => {
+                this.setState({
+                    content: res.data
+                })
+            })
+    }
     componentDidMount(){
-        // this.$http.get('http://api', { id: this.state.id })
-        //     .then(res => {
-        //         this.setState({
-        //             content: res.data
-        //         })
-        //     })
+        //this.getNews()
+    }
+    componentDidUpdate(){
+        //this.getNews()
     }
     render() {
         return (
